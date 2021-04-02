@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import androidx.appcompat.app.AppCompatDelegate
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.mylayout.view.*
 
@@ -21,7 +22,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // load foods
+        //To disable dark theme on the entire app
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+
+        // load food
         foodlist.add(Food("Coffee","Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. When coffee berries turn from green to bright red in color – indicating ripeness – they are picked, processed, and dried. Dried coffee seeds are roasted to varying degrees, depending on the desired flavor.", R.drawable.coffee_pot))
         foodlist.add(Food("Espersso","Espresso is a coffee-brewing method of Italian origin, in which a small amount of nearly boiling water is forced under 9–10 bars of pressure through finely-ground coffee beans. Espresso coffee can be made with a wide variety of coffee beans and roast degrees.", R.drawable.espresso))
         foodlist.add(Food("French Fires","French fries primarily contain carbohydrates (mostly in the form of starch) and protein from the potato, and fat absorbed during the deep-frying process. Salt, which contains sodium, is almost always applied as a surface seasoning.", R.drawable.french_fries))
