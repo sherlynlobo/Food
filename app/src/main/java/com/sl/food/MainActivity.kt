@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun getView(index: Int, convertView: View?, parent: ViewGroup?): View {
             var food: Food = this.foodlist[index]
-            var inflater: LayoutInflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var inflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var foodview = inflater.inflate(R.layout.mylayout,null)
             foodview.imageView.setImageResource(food.image!!)
             foodview.textView.text = food.name!!
