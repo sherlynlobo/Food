@@ -33,6 +33,28 @@ class MainActivity : AppCompatActivity() {
         foodlist.add(Food("Honey","Honey is a sweet, viscous food substance made by honey bees and some related insects. Bees produce honey from the sugary secretions of plants or from secretions of other insects, by regurgitation, enzymatic activity, and water evaporation. Bees store honey in wax structures called honeycombs.",R.drawable.honey))
         foodlist.add(Food("Strawberry", "The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.",R.drawable.strawberry_ice_cream))
         foodlist.add(Food("Sugar cubes", "Sugar cubes may refer to one of the following: Sugar cube, sugar pressed together in block shape that is used to sweeten drinks.",R.drawable.sugar_cubes))
+        foodlist.add(Food("Daal Fry", "Ingredients-\n" +
+                "Yellow daal(toor)-250 gm\n" +
+                "onion chopped-2 medium size\n" +
+                "Tomato chopped-2 \n" +
+                "Dry red chilli-2\n" +
+                "Ginger garlic paste-1 tbsp\n" +
+                "Asafoetida(hing)-2 pinch\n" +
+                "Cumin seeds-1 tsp\n" +
+                "Turmeric powder-2 tsp\n" +
+                "Cooking oil -2 tbsp\n" +
+                "salt to taste\n" +
+                "Chopped coriander leaves for garnish\n" +
+                "Method-\n" +
+                "Add salt and turmeric powder and boil the toor daal in pressure cooker(4-5 whistle),\n" +
+                "Heat oil in a pan, after it is heated, add cumin seeds,red chilli and Asafoetida (hing) and let  it splutter for few seconds.\n" +
+                "Add chopped onion and fry for 3-4 mins.\n" +
+                "Add ginger garlic paste and cook it for 2 mins, keep steering it to ensure it does not burn.\n" +
+                "Add tomatoes and cook it for few more mins. \n" +
+                "Add boiled toor daal in the pan and stir,simmer the flame.\n" +
+                "Garnish with chopped coriander leaves and turn off the flame.\n" +
+                "Ready to serve with rice and rotis.",R.drawable.daal))
+
         adapter = FoodAdapter(this, foodlist)
 
         gridView.adapter = adapter
